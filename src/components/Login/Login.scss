@@ -1,0 +1,28 @@
+.login {
+  display: flex;
+  flex-direction: column; // 要素を縦並びにする
+  justify-content: center;
+  align-items: center; // 要素を画面の真ん中に寄せるために必要
+  width: 100%; // 上とセットで
+  height: 100vh; // Y軸0に移動
+  gap: 30px;
+
+  .button {
+    width: 200px;
+    background-color: #738adb;
+    color: #eff2f5;
+    font-weight: 800;
+
+    &:hover {
+      background-color: black;
+      color: #738adb;
+    }
+  }
+
+  .loginLogo {
+    img {
+      object-fit: cover; // 画像を中央の位置でトリミングする
+      height: 150px;
+    }
+  }
+}

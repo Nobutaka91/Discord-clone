@@ -1,0 +1,49 @@
+.chatHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+  // padding-bottom: 10px;
+
+  .chatHeaderLeft {
+    padding-left: 15px;
+  }
+
+  .chatHeaderHash {
+    color: #7b7c85;
+    padding-right: 7px;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .chatHeaderRight {
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px; // 要素間の間隔をあけることができる
+    color: #7b7c85;
+
+    .chatHeaderSearch {
+      display: flex;
+      align-items: center;
+      background-color: #262630;
+      padding: 3px;
+      border-radius: 3px;
+
+      input {
+        background: transparent; // input要素の背景白色を取り除くことができる
+        outline: none; // クリックしてもアウトラインが表示されなくなる
+        color: white;
+        border: none;
+      }
+    }
+
+    .MuiSvgIcon-root {
+      // Material UIアイコンにもカーソルが当たるようにする
+      cursor: pointer;
+    }
+  }
+}
